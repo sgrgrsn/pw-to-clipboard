@@ -19,7 +19,10 @@
     "to",
     "clipboard"
   ],
-  "author": "Søren Gregersen",
+  "author": {
+    "name": "Søren Gregersen",
+    "email": "s@grgrsn.dk"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sgrgrsn/pw-to-clipboard/issues"
