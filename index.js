@@ -9,6 +9,6 @@ var password = generator.generate({
 });
 
 clipboard.copy(password, function () {
-  console.log('Copied your password to clipboard');
+  console.log('Copied your password to clipboard 🔑');
   console.log(password);
 });
