@@ -5,7 +5,7 @@ This little CLI is built on top of [generate-password](https://www.npmjs.com/pac
 
 Install the package globally and type `pw-to-clipboard` in your terminal. You will now have a new strong password copied into your clipboard.
 
-## Install and set up
+## Install and configuring
 `npm install pw-to-clipboard -g`
 
 You will be asked a few questions about how you would like your passwords.
