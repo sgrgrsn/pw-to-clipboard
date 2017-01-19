@@ -1,7 +1,7 @@
 {
   "name": "pw-to-clipboard",
   "version": "1.0.0",
-  "description": "Generate a strong password and copy it to your clipboard",
+  "description": "Generate strong passwords directly from your terminal to your clipboard",
   "main": "index.js",
   "scripts": {
     "postinstall": "node config.js"
