@@ -9,6 +9,9 @@ var password = generator.generate({
 });
 
 clipboard.copy(password, function () {
-  console.log('Copied your password to clipboard 🔑');
-  console.log(password);
+  // Show an output message in green font color - reset the color it in the end
+  console.log('\x1b[32m', 'Copied your password to clipboard 🔑', '\x1b[0m');
+
+  // Show the password in inversed colors
+  console.log(' \x1b[7m', password, '\x1b[0m');
 });
