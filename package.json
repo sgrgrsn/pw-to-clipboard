@@ -1,6 +1,6 @@
 {
   "name": "pw2clip",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Generate strong passwords directly from your terminal to your clipboard",
   "main": "index.js",
   "scripts": {
