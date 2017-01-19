@@ -38,3 +38,6 @@ jspm_packages
 
 # IntelliJ
 .idea
+
+# Config file
+config.json
