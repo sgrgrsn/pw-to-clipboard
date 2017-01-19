@@ -6,10 +6,10 @@ var generator = require('generate-password');
 var config = require('./config.json');
 
 var password = generator.generate({
-	length: config['length'],
-	numbers: config['numbers'],
-	symbols: config['symbols'],
-	excludeSimilarCharacters: config['excludeSimilarCharacters']
+  length: config['length'],
+  numbers: config['numbers'],
+  symbols: config['symbols'],
+  excludeSimilarCharacters: config['excludeSimilarCharacters']
 });
 
 clipboard.copy(password, function () {
