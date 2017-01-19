@@ -101,6 +101,6 @@ function filterBool(value) {
  */
 function writeConfig(config) {
   fs.writeFile("./config.json", JSON.stringify(config), 'utf8', function () {
-    console.log('\x1b[32m', 'Config saved 👍  Get you passwords by using \x1b[0m\x1b[7m pw-to-clipboard \x1b[0m');
+    console.log('\x1b[32m', 'Config saved 👍  Get you passwords by using \x1b[0m\x1b[7m pw2clip \x1b[0m');
   });
 }
