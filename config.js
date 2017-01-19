@@ -58,28 +58,49 @@ function runSetup() {
       filter: filterBool
     },
     {
+      name: 'exclude',
+      message: 'If you want to exclude special characters from your passwords, then type them here:'
+    },
+    {
       type: 'list',
       name: 'strict',
-      message: 'Would you like to include at least one character from each character type?',
+      message: 'Would you like to include at least one character from each character type in your passwords?',
       choices: boolChoices,
       default: 0,
       filter: filterBool
     },
     {
-      name: 'exclude',
-      message: 'If you want to exclude special characters, then type them now:'
+      type: 'list',
+      name: 'showPassword',
+      message: 'Would you like to see the generated passwords in the console output',
+      choices: boolChoices,
+      default: 1,
+      filter: filterBool
     }
   ];
 
+  // Ask the questions, and write the config
   inquirer.prompt(questions).then(function (config) {
     writeConfig(config);
   });
 }
 
-function writeConfig(config) {
-  console.log(JSON.stringify(config));
-}
-
+/**
+ * Used to filter bool answers
+ * Checks if the answer is matching 'Yes' from the boolChoices array
+ * @param value
+ * @returns {boolean}
+ */
 function filterBool(value) {
   return value === boolChoices[0];
+}
+
+/**
+ * Writes the config to config.json which is used in index.js
+ * @param config
+ */
+function writeConfig(config) {
+  fs.writeFile("./config.json", JSON.stringify(config), 'utf8', function () {
+    console.log("Config written, have fun!");
+  });
 }
