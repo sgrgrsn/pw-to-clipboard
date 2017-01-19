@@ -52,15 +52,15 @@ function runSetup() {
     {
       type: 'list',
       name: 'excludeSimilarCharacters',
-      message: 'Would you like to exclude similar characters in your passwords? (eg. iIl|1)',
+      message: 'Would you like to exclude similar characters in your passwords? (eg. ilLI)',
       choices: boolChoices,
       default: 0,
       filter: filterBool
     },
     {
       type: 'list',
-      name: 'excludeSimilarCharacters',
-      message: 'Would you like to exclude similar characters in your passwords? (eg. iIl|1)',
+      name: 'strict',
+      message: 'Would you like to include at least one character from each character type?',
       choices: boolChoices,
       default: 0,
       filter: filterBool
