@@ -4,13 +4,13 @@ var fs = require('fs');
 runSetup();
 
 function runSetup() {
-    var questions = [
-        
-    ];
+  var questions = [
+    
+  ];
 
-    inquirer.prompt(questions).then(function (config) {
-        writeToFile(config);
-    });
+  inquirer.prompt(questions).then(function (config) {
+    writeToFile(config);
+  });
 }
 
 function writeConfig(config) {
